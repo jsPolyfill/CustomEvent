@@ -1,0 +1,26 @@
+{
+  "name": "jspolyfill-custom-event",
+  "version": "0.2.0",
+  "description": "Polyfill for the CustomEvent() constructor functionality in Internet Explorer 9 and higher",
+  "main": "CustomEvent.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsPolyfill/CustomEvent.git"
+  },
+  "keywords": [
+    "CustomEvent",
+    "polyfill",
+    "events",
+    "ie",
+    "internet explorer"
+  ],
+  "author": "Crisoforo Gaspar Hernandez <hello@crisoforo.com> (http://crisoforo.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsPolyfill/CustomEvent/issues"
+  },
+  "homepage": "https://github.com/jsPolyfill/CustomEvent#readme"
+}
