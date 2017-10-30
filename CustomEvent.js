@@ -1,21 +1,15 @@
-function CustomEvent ( event, params ) {
-  params = params || {
-    bubbles: false,
-    cancelable: false,
-    detail: undefined,
-  };
-  var evt = document.createEvent( 'CustomEvent' );
-  evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
-  return evt;
-}
+(function() {
+  if (typeof window === "undefined") return false;
+  if (typeof window.CustomEvent === "function") return false;
 
-function register() {
-}
+  function CustomEvent ( event, params ) {
+      params = params || { bubbles: false, cancelable: false, detail: undefined };
+      var evt = document.createEvent( 'CustomEvent' );
+      evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+      return evt;
+  }
 
-module.exports = function ( undefined ) {
-  if ( typeof window.CustomEvent === 'function' ) {
-    return;
-  };
   CustomEvent.prototype = window.Event.prototype;
+
   window.CustomEvent = CustomEvent;
-};
+})();
