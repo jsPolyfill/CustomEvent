@@ -9,9 +9,6 @@ function CustomEvent ( event, params ) {
   return evt;
 }
 
-function register() {
-}
-
 module.exports = function ( undefined ) {
   if ( typeof window.CustomEvent === 'function' ) {
     return;
