@@ -13,11 +13,15 @@ npm install --save-dev jspolyfill-custom-event
 # Usage
 
 ```js
-require( 'jspolyfill-custom-event' )();
+require('jspolyfill-custom-event');
 ```
 
-**Note**: Make sure to add the extra set of parenthesis at the end to fire the `function` that
-registers the creation of the polyfill.
+or
+
+```js
+import('jspolyfill-custom-event');
+```
+
 
 # Syntax
 
